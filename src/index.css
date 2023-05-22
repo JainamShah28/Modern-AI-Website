@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply font-manrope overflow-x-hidden scroll-smooth
+}
+
+body {
+    @apply bg-primary
+}
+
+* {
+    @apply box-border text-text-primary m-0 p-0
+}
+
+::placeholder { 
+    @apply text-base
+}
+  
+:-ms-input-placeholder { 
+    @apply text-base
+}
+  
+::-ms-input-placeholder { 
+    @apply text-base
+}
+
+@layer components {
+    .nav-link {
+        @apply text-base
+    }
+
+    .btn-primary {
+        @apply bg-button-primary rounded-md px-6 py-3 w-fit xl:hover:bg-button-primary-hover md:px-8 md:py-3
+    }
+
+    .text-gradient {
+        @apply text-transparent bg-clip-text bg-gradient-to-r from-[#AE67FA] to-[#83F467]
+    }
+
+    .about-title {
+        @apply font-extrabold my-2 xl:text-xl
+    }
+
+    .about-title::before {
+        @apply content-[""] bg-gradient-to-r from-[#AE67FA] to-[#83F467] w-8 h-1 block relative -top-2
+    }
+
+    .about-bg {
+        /* ff 3.6+ */
+        background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+        /* opera 11.10+ */
+        background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+        /* ie 10+ */
+        background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+        /* global 92%+ browsers support */
+        background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .hero-section::before {
+        @apply content-[""] bg-[#002853] absolute -top-20 -left-20 w-[240px] h-[240px] lg:w-[720px] lg:h-[720px] blur-3xl rounded-full opacity-50 z-[1]
+    }
+}
