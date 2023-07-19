@@ -13,7 +13,7 @@ This is a website built using React.js, inspired by the design reference provide
 
 🌐 **Deployment:**
 
-The website is deployed on Netlify and can be accessed at this link https://modern-ai-website.netlify.app/. 
+The website is deployed on Netlify and can be accessed at this link https://gpt-three-ai.netlify.app/. 
 
 ⚙️ **Installation and Setup:**
 
